@@ -1,0 +1,14 @@
+# free-web-search — runtime dependencies (all free, no API keys)
+# Install:  python -m pip install -r requirements.txt
+
+# --- required ---------------------------------------------------------------
+requests>=2.28          # HTTP session, retries, pacing, caching
+beautifulsoup4>=4.11    # SERP / page parsing
+lxml>=4.9               # parser backend used by bs4 and trafilatura
+trafilatura>=1.6        # main-article extraction (best quality)
+markdownify>=0.11       # HTML -> Markdown fallback path
+
+# --- optional ---------------------------------------------------------------
+# PDF text extraction in `extract`. The import is guarded: without it, PDFs
+# simply return no text instead of failing.
+pypdf>=4.0

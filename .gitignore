@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# local virtualenvs
+.venv/
+venv/
+
+# runtime state (the tool caches outside the repo by default; these only appear
+# if you point FWS_CACHE_DIR inside the checkout)
+fws_cache/
+searx-quality.json
+
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
